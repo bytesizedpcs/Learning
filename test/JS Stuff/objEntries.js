@@ -16,8 +16,8 @@ Object.entries = function(obj) {
 };
 
 const test = {
-  hello: 'hello',
-  goodbye: 'goodbye'
+  hello: 'world',
+  goodbye: 'life'
 };
 
 function entries(obj) {
