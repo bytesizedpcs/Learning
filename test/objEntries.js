@@ -1,4 +1,4 @@
-(Object.entries = function(obj) {
+Object.entries = function(obj) {
   // Get object keys
   const ownProps = Object.keys(obj);
   // Get Object length
@@ -13,4 +13,18 @@
 
   // return array
   return resArray;
-})();
+};
+
+const test = {
+  hello: 'hello',
+  goodbye: 'goodbye'
+};
+
+function entries(obj) {
+  return Object.keys(obj).reduce((acc, curr, i) => {
+    acc[i] = [curr, obj[curr]];
+    return acc;
+  }, []);
+}
+ 
+console.log(entries(test));
