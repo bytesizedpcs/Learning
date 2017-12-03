@@ -1,14 +1,14 @@
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
 const Pusher = require('pusher');
+const authconfig = require('./Auth/auth0-variables');
 
 const app = express();
 
 const pusher = new Pusher({
-  appId: '439731',
-  key: '03cf091129ce43ca5e96',
-  secret: 'c1232359b115b3c4e452',
+  appId: authconfig.appId,
+  key: authconfig.key,
+  secret: authconfig.secret,
   cluster: 'us2',
   encrypted: true,
 });

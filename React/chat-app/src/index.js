@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import 'bootstrap/dist/css/boostrap.css';
+import 'bootstrap';
 import { makeMainRoutes } from './routes';
 
 const routes = makeMainRoutes();

@@ -3,7 +3,6 @@ import { Redirect, Route, BrowserRouter } from 'react-router-dom';
 import App from './App';
 import history from './history';
 
-import Home from './Home/Home';
 import Auth from './Auth/Auth';
 import Profile from './Profile/Profile';
 import Chat from './Chat/Chat';
